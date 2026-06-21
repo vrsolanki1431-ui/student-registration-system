@@ -16,7 +16,7 @@ HTML, CSS 🎨
 📂 Project Setup (Run Locally)
 Bash
 # Clone repository
-git clone https://github.com/your-username/student-register-system.git
+git clone https://github.com/vrsolanki1431-ui/student-registration-system
 
 # Go to project folder
 cd student-register-system
