@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student List</title>
+
+<style>
+body{
+    font-family: Arial;
+    background:#f4f4f4;
+}
+
+.container{
+    width:95%;
+    margin:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th,td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:left;
+}
+
+th{
+    background:#28a745;
+    color:white;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h2>Registered Students</h2>
+
+<table>
+<tr>
+    <th>Name</th>
+    <th>Roll No</th>
+    <th>Contact</th>
+    <th>Email</th>
+    <th>Course</th>
+</tr>
+
+{% for student in students %}
+<tr>
+    <td>{{ student.name }}</td>
+    <td>{{ student.roll_number }}</td>
+    <td>{{ student.contact }}</td>
+    <td>{{ student.email }}</td>
+    <td>{{ student.course }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background:#f4f4f4;
+            margin:0;
+        }
+
+        nav{
+            background:#2c3e50;
+            color:white;
+            padding:15px;
+            text-align:center;
+        }
+
+        .container{
+            width:80%;
+            margin:auto;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h2>Student Registration System</h2>
+</nav>
+
+<div class="container">
+    {% block content %}
+    {% endblock %}
+</div>
+
+</body>
+</html>
